@@ -67,7 +67,7 @@
 ```text
 .
 ├── cmd/
-│   ├── api/main.go        # API Server 入口
+│   ├── main.go        # API Server 入口
 │   └── worker/main.go     # 异步任务 Worker 入口
 ├── configs/               # 配置文件目录
 ├── internal/
