@@ -67,7 +67,7 @@
 ```text
 .
 ├── cmd/
-│   ├── main.go        # API Server 入口
+│   ├── main.go            # API Server 入口
 │   └── worker/main.go     # 异步任务 Worker 入口
 ├── configs/               # 配置文件目录
 ├── internal/
@@ -141,19 +141,19 @@ go run worker_main.go # 运行 Worker 版本的 main.go
 📖 API 概览
 
 | 模块          | 端点 (Endpoint)                 | 说明                              |
-| ----------- | ----------------------------- | ------------------------------- |
-| **Account** | `POST /account/register`      | 用户注册                            |
+| ----------- | ----------------------------- | -------------------------------      |
+| **Account** | `POST /account/register`      | 用户注册                              |
 |             | `POST /account/login`         | 用户登录 (返回 Token & Refresh Token) |
 |             | `POST /account/updateProfile` | 更新个人资料                          |
 | **Video**   | `POST /video/uploadVideo`     | 上传视频文件                          |
-|             | `POST /video/publish`         | 发布视频                            |
-| **Feed**    | `POST /feed/listLatest`       | 获取最新视频流 (游标分页)                  |
+|             | `POST /video/publish`         | 发布视频                              |
+| **Feed**    | `POST /feed/listLatest`       | 获取最新视频流 (游标分页)              |
 |             | `POST /feed/listByPopularity` | 获取热门视频流                         |
-|             | `POST /feed/listByFollowing`  | 获取关注者的视频流                       |
-| **Like**    | `POST /like/like`             | 点赞视频                            |
-| **Comment** | `POST /comment/publish`       | 发布评论 (支持 `@` 提及)                |
-| **Social**  | `POST /social/follow`         | 关注用户                            |
-| **Notify**  | `GET /notification/stream`    | SSE 实时消息推送订阅接口                  |
+|             | `POST /feed/listByFollowing`  | 获取关注者的视频流                     |
+| **Like**    | `POST /like/like`             | 点赞视频                              |
+| **Comment** | `POST /comment/publish`       | 发布评论 (支持 `@` 提及)               |
+| **Social**  | `POST /social/follow`         | 关注用户                              |
+| **Notify**  | `GET /notification/stream`    | SSE 实时消息推送订阅接口               |
 
 (详细接口文档建议配合 Postman 或 Swagger 使用)
 
