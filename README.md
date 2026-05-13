@@ -136,7 +136,7 @@ go run main.go # 运行 API 版本的 main.go
 
 启动 Worker 进程： 消费 RabbitMQ 消息，处理异步任务（点赞、评论、通知等）。
 
-go run worker_main.go # 运行 Worker 版本的 main.go
+go run worker/main.go # 运行 Worker 版本的 main.go
 
 📖 API 概览
 
