@@ -166,14 +166,3 @@ go run worker_main.go # 运行 Worker 版本的 main.go
 3.  提交你的更改 (git commit -m 'Add some AmazingFeature')
 4.  推送到分支 (git push origin feature/AmazingFeature)
 5.  开启一个 Pull Request
-
-📄 许可证
-
-本项目采用 MIT License 开源许可证。
-
-
-### 💡 为什么这份 README 更好？
-1. **视觉吸引力**：顶部加入了技术栈的徽章（Shields），让人一眼看出项目使用的技术。
-2. **突出亮点**：将你代码里的精髓（Singleflight 防击穿、L1/L2/L3 多级缓存、Outbox 模式、RabbitMQ 降级机制、SSE 推送）提炼成了“技术亮点”，这对于面试官或者其他开发者来说是最具吸引力的部分。
-3. **结构清晰**：从功能介绍到架构设计，再到目录结构和启动指南，符合优秀的开源项目文档规范。
-4. **双进程说明**：你的代码里有两个 `main.go`（一个是 API，一个是 Worker），我在“快速开始”里特别注明了需要分别启动，避免新人跑不起来。
